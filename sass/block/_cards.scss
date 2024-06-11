@@ -1,0 +1,160 @@
+.cards{
+    background: #ece9e99c;
+    padding: 40px;
+    width: 100%;
+    .cardss{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        .menu{
+            font-size: 48px;
+            a{
+                &:hover{
+                    color: aqua;
+                }
+            }
+        }
+        .cards__sections{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px 55px;
+                background: rgb(245, 212, 217);
+                &:hover{
+                    background: red;
+                    color: aliceblue;
+                }
+            }
+
+        }
+        .cards__wrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            .cards__card{
+               max-width: 370px;
+                img{
+                    width: 100%;
+                }
+                .cards__title{
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    background: #fcfbfb;
+                    border-radius: 0 0px 15px 15px;
+                    .card__cost{
+                        border-top: 1px solid gray;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 0;
+                        gap: 7px;
+                        .cost{
+                            height: 100%;
+                            flex: 1;
+                            border-right: 1px solid gray;
+                        }
+                    }
+                }
+            }
+        }
+        .card__button{
+            padding: 15px 60px;
+            border: 1px solid dodgerblue;
+        }
+    }
+}
+@media (max-width:550) {
+    .cards{
+    background: #ece9e99c;
+    padding: 20px;
+    width: 100%;
+    .cardss{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        .menu{
+            font-size: 18px;
+            text-align: center;
+            a{
+                &:hover{
+                    color: aqua;
+                }
+            }
+        }
+        .cards__sections{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 5px;
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px 55px;
+                background: rgb(245, 212, 217);
+                &:hover{
+                    background: red;
+                    color: aliceblue;
+                }
+            }
+
+        }
+        .cards__wrap{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            // align-items: center;
+            // justify-content: center;
+            
+            gap: 15px;
+            .cards__card{
+               max-width: 370px;
+                img{
+                    width: 100%;
+                }
+                .cards__title{
+                    padding: 20px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+                    background: #fcfbfb;
+                    border-radius: 0 0px 15px 15px;
+                    .card__cost{
+                        border-top: 1px solid gray;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 5px 0;
+                        gap: 7px;
+                        .cost{
+                            height: 100%;
+                            flex: 1;
+                            border-right: 1px solid gray;
+                        }
+                    }
+                }
+            }
+        }
+        .card__button{
+            padding: 15px 60px;
+            border: 1px solid dodgerblue;
+        }
+    }
+}
+}
